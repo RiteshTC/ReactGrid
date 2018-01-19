@@ -1,0 +1,134 @@
+/*datagrid-wrap*/
+.datagrid-wrap{
+  display: flex;
+  min-width: 600px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.datagrid-wrap.inline-view{
+  flex-wrap: nowrap;
+}
+
+  .datagrid-wrap .pagination-wrap{
+    order: 1;
+    flex: 0 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .datagrid-wrap .pagination-wrap.top-left{
+    justify-content: flex-start;
+  }
+  .datagrid-wrap .pagination-wrap.top-left + div{
+    flex: 0 100%;
+    order: 2;
+  }
+  .datagrid-wrap .pagination-wrap.top-right{
+    justify-content: flex-end;
+  }
+  .datagrid-wrap .pagination-wrap.top-right + div{
+    flex: 0 100%;
+    order: 2;
+  }
+  .datagrid-wrap .pagination-wrap.bottom-left{
+    justify-content: flex-start;
+    order: 3;
+  }
+  .datagrid-wrap .pagination-wrap.bottom-left + div{
+    order: 1;
+    flex: 0 100%;
+  }
+  .datagrid-wrap .pagination-wrap.bottom-right{
+    justify-content: flex-end;
+    order: 3;
+  }
+  .datagrid-wrap .pagination-wrap.bottom-right + div{
+    order: 1;
+    flex: 0 100%;
+  }
+  .datagrid-wrap .pagination-wrap.left{
+    order: 1;
+    flex: 0 60px;
+  }
+  .datagrid-wrap .pagination-wrap.right{
+    order: 3;
+    flex: 0 60px;
+  }
+
+  .datagrid-wrap .pagination-wrap.left .pagination,
+  .datagrid-wrap .pagination-wrap.right .pagination {
+    padding: 0 10px;
+    margin-top: 0;
+  }
+  .datagrid-wrap .pagination-wrap.left .pagination li,
+  .datagrid-wrap .pagination-wrap.right .pagination li {
+    display: block;
+  }
+    .datagrid-wrap .pagination-wrap.left .pagination li a,
+    .datagrid-wrap .pagination-wrap.right .pagination li a{
+      display: block;
+      margin: 0;
+      min-width: 55px;
+    }
+  .datagrid-wrap .react-grid-Container{
+    min-width: 600px;
+    order: 2;
+    flex: 1;
+  }
+/*fixed footer*/
+.grid-footer{
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+  .grid-footer .react-grid-Cell{
+    border-top: 1px solid #ddd;
+    background-color: #f7f7f7;
+  }
+
+
+ .data-handling{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid red;
+    margin: 20px 15px 10px;
+    float: left;
+    clear: both;
+}
+
+ .data-handling h4{
+  margin: 0;
+}
+
+ .data-handling select{
+  margin: 0 7px;
+}
+
+.perf-options,.perf-time{
+  display: none;
+}
+
+.show-options .perf-options{
+  display: inline;
+}
+
+.show-options .perf-time{
+  display: block;
+}
+
+.state-info{
+  padding-left: 15px;
+}
+
+.data-saving{
+    flex: 0 1 100%;
+    order: 3;
+    margin: 15px 0 0 15px;
+}
+
+.data-saving button{
+  margin-right: 15px;
+}
